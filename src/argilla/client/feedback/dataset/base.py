@@ -15,7 +15,7 @@
 from abc import ABC, ABCMeta, abstractmethod
 from typing import TYPE_CHECKING, Any, Dict, List, Literal, Optional, Union
 
-from pydantic import ValidationError
+from argilla.pydantic_v1 import ValidationError
 
 from argilla.client.feedback.integrations.huggingface import HuggingFaceDatasetMixin
 from argilla.client.feedback.schemas import (

@@ -17,7 +17,7 @@ from typing import Optional, Type
 from uuid import UUID
 
 import httpx
-from pydantic import BaseModel
+from argilla.pydantic_v1 import BaseModel
 
 
 class RemoteSchema(BaseModel, ABC):

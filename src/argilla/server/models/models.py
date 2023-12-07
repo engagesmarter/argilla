@@ -16,7 +16,7 @@ import secrets
 from typing import Any, List, Optional
 from uuid import UUID
 
-from pydantic import parse_obj_as
+from argilla.pydantic_v1 import parse_obj_as
 from sqlalchemy import JSON, ForeignKey, Text, UniqueConstraint, and_
 from sqlalchemy import Enum as SAEnum
 from sqlalchemy.ext.mutable import MutableDict

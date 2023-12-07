@@ -15,7 +15,7 @@
 from pathlib import Path
 from typing import Dict, Optional
 
-from pydantic import AnyHttpUrl, BaseModel
+from argilla.pydantic_v1 import AnyHttpUrl, BaseModel
 
 from argilla.client.api import init
 from argilla.client.sdk.commons.errors import HttpResponseError, UnauthorizedApiError

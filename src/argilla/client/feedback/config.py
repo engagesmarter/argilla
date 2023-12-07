@@ -22,7 +22,7 @@ try:
 except ImportError:
     from typing_extensions import Annotated
 
-from pydantic import BaseModel, Field
+from argilla.pydantic_v1 import BaseModel, Field
 
 try:
     from yaml import SafeLoader, dump, load

@@ -19,7 +19,7 @@ from abc import ABC
 from typing import TYPE_CHECKING, Any, Callable, Dict, Iterator, List, Optional, Tuple, Union
 
 import pandas as pd
-from pydantic import BaseModel
+from argilla.pydantic_v1 import BaseModel
 
 from argilla._constants import OPENAI_SEPARATOR, OPENAI_WHITESPACE
 from argilla.client.feedback.schemas import (

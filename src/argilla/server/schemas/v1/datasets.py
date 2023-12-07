@@ -16,10 +16,10 @@ from datetime import datetime
 from typing import Any, Dict, List, Literal, Optional, Union
 from uuid import UUID
 
-from pydantic import BaseModel, conlist, constr, root_validator, validator
-from pydantic import Field as PydanticField
-from pydantic.utils import GetterDict
-
+from argilla.pydantic_v1 import BaseModel
+from argilla.pydantic_v1 import Field as PydanticField
+from argilla.pydantic_v1 import conlist, constr, root_validator, validator
+from argilla.pydantic_v1.utils import GetterDict
 from argilla.server.schemas.base import UpdateSchema
 from argilla.server.schemas.v1.suggestions import Suggestion, SuggestionCreate
 from argilla.server.search_engine import Query
@@ -30,7 +30,12 @@ except ImportError:
     from typing_extensions import Annotated
 
 from argilla.server.enums import FieldType
-from argilla.server.models import DatasetStatus, QuestionSettings, QuestionType, ResponseStatus
+from argilla.server.models import (
+    DatasetStatus,
+    QuestionSettings,
+    QuestionType,
+    ResponseStatus,
+)
 
 DATASET_NAME_REGEX = r"^(?!-|_)[a-zA-Z0-9-_ ]+$"
 DATASET_NAME_MIN_LENGTH = 1

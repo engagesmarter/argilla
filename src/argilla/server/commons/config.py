@@ -14,7 +14,7 @@
 
 from typing import List, Optional, Set, Type
 
-from pydantic import BaseModel
+from argilla.pydantic_v1 import BaseModel
 
 from argilla.server.commons.models import TaskType
 from argilla.server.errors import EntityNotFoundError, WrongTaskError

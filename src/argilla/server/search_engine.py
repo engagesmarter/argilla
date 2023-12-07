@@ -17,9 +17,9 @@ from typing import Any, AsyncGenerator, Dict, Iterable, List, Optional, Union
 from uuid import UUID
 
 from opensearchpy import AsyncOpenSearch, helpers
-from pydantic import BaseModel
-from pydantic.utils import GetterDict
 
+from argilla.pydantic_v1 import BaseModel
+from argilla.pydantic_v1.utils import GetterDict
 from argilla.server.enums import FieldType, ResponseStatusFilter
 from argilla.server.models import (
     Dataset,

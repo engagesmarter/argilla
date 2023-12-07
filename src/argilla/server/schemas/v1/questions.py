@@ -16,7 +16,7 @@ from datetime import datetime
 from typing import Literal, Optional, Union
 from uuid import UUID
 
-from pydantic import BaseModel, Field, PositiveInt, conlist
+from argilla.pydantic_v1 import BaseModel, Field, PositiveInt, conlist
 
 from argilla.server.schemas.base import UpdateSchema
 

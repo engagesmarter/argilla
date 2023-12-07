@@ -16,7 +16,7 @@ from typing import TYPE_CHECKING, List, Optional
 
 import typer
 import yaml
-from pydantic import BaseModel, constr
+from argilla.pydantic_v1 import BaseModel, constr
 
 from argilla.cli import typer_ext
 from argilla.cli.server.database.users.utils import get_or_new_workspace

@@ -14,7 +14,7 @@
 
 from typing import TYPE_CHECKING, List, Optional, Union
 
-from pydantic import BaseModel, create_model
+from argilla.pydantic_v1 import BaseModel, create_model
 
 from argilla.client.api import active_client
 from argilla.client.feedback.constants import FIELD_TYPE_TO_PYTHON_TYPE
